@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Footer from '../../components/commons/Footer'
 import Header from "../../components/commons/Header"
 import Welcome from "../../components/Hero"
 import Team from "../../components/Team"
@@ -23,6 +24,7 @@ export default function App() {
       <Header />
       <Welcome />
       <Team />
+      <Footer />
     </div>
   )
 }
