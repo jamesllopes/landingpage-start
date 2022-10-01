@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import Logo from "../../Logo";
-import Navbar from "../../navbar";
+import Navbar from "../../Navbar";
 
 const headerFlex = {
     backgroundColor: '#74C69D',
