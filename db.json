@@ -1,23 +1,27 @@
 {
     "teams": [
         {
+            "id": 1,
             "name": "Peg Legge",
-            "function": "CEO",
+            "role": "CEO",
             "avatar": "./src/assets/avatar/pegLegge.png"
         },
         {
+            "id": 2,
             "name": "Richard Guerra",
-            "function": "CTO",
+            "role": "CTO",
             "avatar": "./src/assets/avatar/richardGuerra.png"
         },
         {
+            "id": 3,
             "name": "Alexandra Stolz",
-            "function": "Designer",
+            "role": "DESIGNER",
             "avatar": "./src/assets/avatar/alexandraStolz.png"
         },
         {
+            "id": 4,
             "name": "Janet Bray",
-            "function": "Developer",
+            "role": "DEVELOPER",
             "avatar": "./src/assets/avatar/janetBray.png"
         }
     ]

@@ -1,5 +1,11 @@
-import { HStack, Box, Text, Image, Heading, Flex, color } from "@chakra-ui/react";
-import testeImage from '../../assets/avatar/pegLegge.png'
+import {
+    HStack,
+    Box,
+    Text,
+    Image,
+    Heading,
+    Flex
+} from "@chakra-ui/react";
 
 const cardBox = {
     display: 'flex',
@@ -33,16 +39,16 @@ const cardText = {
     color: '#212529BF'
 }
 
-export default function Card() {
+export default function Card({ name, role, avatar }) {
     return (
-        <HStack>
-            <Box sx={cardBox}>
-                <Image src={testeImage} width="90%" alt="Avatar" />
-                <Flex sx={cardFlex}>
-                    <Heading sx={cardHeading}>Peg Legge</Heading>
-                    <Text sx={cardText}>CEO</Text>
-                </Flex>
-            </Box>
-        </HStack>
+
+        <Box sx={cardBox}>
+            <Image src={avatar} width="90%" alt="Avatar" />
+            <Flex sx={cardFlex}>
+                <Heading sx={cardHeading}>{name}</Heading>
+                <Text sx={cardText}>{role}</Text>
+            </Flex>
+        </Box>
+
     )
 }

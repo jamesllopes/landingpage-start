@@ -4,9 +4,9 @@ import useProvider from "../hooks/useProvider";
 const StartContext = createContext()
 
 export function StartProvider(props) {
-    const StartProvider = useProvider()
+    const startProvider = useProvider()
     return (
-        <StartContext.Provider value={StartProvider}>{props.children}</StartContext.Provider>
+        <StartContext.Provider value={startProvider}>{props.children}</StartContext.Provider>
     )
 }
 
