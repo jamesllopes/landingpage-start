@@ -24,5 +24,42 @@
             "role": "DEVELOPER",
             "avatar": "./src/assets/avatar/janetBray.png"
         }
+    ],
+    "sociais": [
+        {
+            "id": 1,
+            "name": "facebook",
+            "logo": "./src/assets/sociais/facebook.svg"
+        },
+        {
+            "id": 2,
+            "name": "instagram",
+            "logo": "./src/assets/sociais/instagram.svg"
+        },
+        {
+            "id": 3,
+            "name": "twitter",
+            "logo": "./src/assets/sociais/twitter.svg"
+        },
+        {
+            "id": 4,
+            "name": "pinterrest",
+            "logo": "./src/assets/sociais/pinterest.svg"
+        },
+        {
+            "id": 5,
+            "name": "tiktok",
+            "logo": "./src/assets/sociais/tiktok.svg"
+        },
+        {
+            "id": 6,
+            "name": "whatsapp",
+            "logo": "./src/assets/sociais/whatsapp.svg"
+        },
+        {
+            "id": 7,
+            "name": "youtube",
+            "logo": "./src/assets/sociais/youtube.svg"
+        }
     ]
 }

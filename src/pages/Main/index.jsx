@@ -7,16 +7,17 @@ import useStart from "../../hooks/useStart"
 import './style.css'
 
 export default function App() {
-  const { setTeam } = useStart()
+  const { setTeam, setSociais } = useStart()
 
-  const getTeamApi = async () => {
+  const getDataApi = async () => {
     let response = await fetch('./db.json')
     let data = await response.json()
     setTeam(data.teams)
+    setSociais(data.sociais)
   }
 
   useEffect(() => {
-    getTeamApi()
+    getDataApi()
   }, [])
 
   return (
