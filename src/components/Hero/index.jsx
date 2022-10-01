@@ -26,7 +26,8 @@ const styleHeading = {
 
 export default function Welcome() {
     return (
-        <Flex sx={welcomeFlex}>
+        <Flex
+            sx={welcomeFlex}>
             <Flex sx={contentFlex}>
                 <Heading sx={styleHeading}>Welcome</Heading>
                 <TextContent
