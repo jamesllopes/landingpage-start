@@ -17,7 +17,7 @@ const styleHeading = {
 const styleText = {
   fontSize: '1rem',
   fontFamily: "'Work Sans', sans-serif",
-  fontWeight: '400'
+  fontWeight: '400',
 }
 
 export default function TextContent(props) {
