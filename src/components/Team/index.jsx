@@ -11,6 +11,12 @@ export default function Team() {
 
     const { setTeam } = useStart()
 
+    const getTeamApi = async () => {
+        let response = await fetch(urlApi)
+        let moviesData = await response.json()
+        moviesTemp = moviesData.results
+    }
+
 
     useEffect(() => {
 

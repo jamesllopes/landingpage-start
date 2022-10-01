@@ -1,0 +1,24 @@
+{
+    "teams": [
+        {
+            "name": "Peg Legge",
+            "function": "CEO",
+            "avatar": "./src/assets/avatar/pegLegge.png"
+        },
+        {
+            "name": "Richard Guerra",
+            "function": "CTO",
+            "avatar": "./src/assets/avatar/richardGuerra.png"
+        },
+        {
+            "name": "Alexandra Stolz",
+            "function": "Designer",
+            "avatar": "./src/assets/avatar/alexandraStolz.png"
+        },
+        {
+            "name": "Janet Bray",
+            "function": "Developer",
+            "avatar": "./src/assets/avatar/janetBray.png"
+        }
+    ]
+}
