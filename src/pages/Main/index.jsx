@@ -1,5 +1,5 @@
 import Header from "../../components/commons/Header"
-import Welcome from "../../components/Welcome"
+import Welcome from "../../components/Hero"
 import './style.css'
 
 export default function App() {
