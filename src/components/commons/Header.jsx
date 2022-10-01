@@ -6,11 +6,15 @@ const headerFlex = {
     padding: '0.5rem'
 }
 
+const headerHeading = {
+    fontSize: '1.6rem'
+}
+
 export default function Header() {
     return (
         <Flex sx={headerFlex}>
             <Image src="./logo.svg" />
-            <Heading fontSize={'1.6rem'}>
+            <Heading fontSize={'1rem'}>
                 Start
             </Heading>
         </Flex>
