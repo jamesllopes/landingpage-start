@@ -27,8 +27,7 @@ export default function Footer() {
                 {sociais?.map(item => (
                     <Image key={item.id}
                         src={item.logo}
-                        alt={item.name} />
-                ))}
+                        alt={item.name} />))}
             </HStack>
             <Text sx={styleText}>
                 © Start, 2022. All rights reserved.

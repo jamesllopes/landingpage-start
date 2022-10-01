@@ -25,6 +25,33 @@
             "avatar": "./src/assets/avatar/janetBray.png"
         }
     ],
+    "partners": [
+        {
+            "id": 1,
+            "name": "google",
+            "logo": "./src/assets/partners/google.svg"
+        },
+        {
+            "id": 2,
+            "name": "microsoft",
+            "logo": "./src/assets/partners/microsoft.svg"
+        },
+        {
+            "id": 3,
+            "name": "airbnb",
+            "logo": "./src/assets/partners/airbnb.svg"
+        },
+        {
+            "id": 4,
+            "name": "facebook",
+            "logo": "./src/assets/partners/facebook.svg"
+        },
+        {
+            "id": 5,
+            "name": "spotify",
+            "logo": "./src/assets/partners/spotify.svg"
+        }
+    ],
     "sociais": [
         {
             "id": 1,
