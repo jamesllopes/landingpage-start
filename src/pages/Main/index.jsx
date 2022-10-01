@@ -1,5 +1,6 @@
 import Header from "../../components/commons/Header"
 import Welcome from "../../components/Hero"
+import Team from "../../components/Team"
 import './style.css'
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <div className="main">
       <Header />
       <Welcome />
+      <Team />
     </div>
   )
 }
