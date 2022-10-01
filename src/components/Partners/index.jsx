@@ -20,7 +20,7 @@ export default function Partners() {
                 textInfo={'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'} />
             <HStack
                 spacing={20}
-                paddingBottom='2rem'>>
+                paddingBottom='2rem'>
                 {partners?.map(item => (
                     <Image src={item.logo} />
                 ))}
