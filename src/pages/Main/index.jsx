@@ -1,10 +1,11 @@
 import Header from "../../components/commons/Header"
-import DefaultButton from "../../components/Button"
+import Welcome from "../../components/Welcome"
 
 function App() {
   return (
     <div className="main">
       <Header />
+      <Welcome />
     </div>
   )
 }
