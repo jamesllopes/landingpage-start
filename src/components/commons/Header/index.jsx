@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-import DefaultButton from "../../Button";
 import Logo from "../../Logo";
 import Navbar from "../../Navbar";
 

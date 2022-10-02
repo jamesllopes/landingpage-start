@@ -5,7 +5,8 @@ const teamTextTitle = {
     fontSize: '1rem',
     fontFamily: "'Work Sans', sans-serif",
     fontWeight: '700',
-    letterSpacing: '5px'
+    letterSpacing: '5px',
+    paddingTop: '2rem'
 }
 
 const teamHeading = {

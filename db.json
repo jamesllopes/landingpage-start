@@ -52,6 +52,26 @@
             "logo": "./src/assets/partners/spotify.svg"
         }
     ],
+    "hero": [
+        {
+            "id": 1,
+            "title": "Lorem ipsum dolor sit amet consectetur",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?",
+            "image": "./src/assets/hero/hero1.png"
+        },
+        {
+            "id": 2,
+            "title": "Lorem ipsum dolor sit amet consectetur ",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?",
+            "image": "./src/assets/hero/hero2.png"
+        },
+        {
+            "id": 3,
+            "title": "Lorem ipsum dolor sit amet consectetur ",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?",
+            "image": "./src/assets/hero/hero3.png"
+        }
+    ],
     "sociais": [
         {
             "id": 1,

@@ -1,5 +1,5 @@
 import { Flex, HStack, Image } from "@chakra-ui/react";
-import DefaultButton from "../Button";
+import { DefaultButton } from "../Button";
 import TitleSection from "../TitleSection";
 import useStart from "../../hooks/useStart";
 
@@ -22,13 +22,13 @@ export default function Partners() {
                 spacing={20}
                 paddingBottom='2rem'>
                 {partners?.map(item => (
-                    <Image src={item.logo} />
+                    <Image key={item.id} src={item.logo} />
                 ))}
             </HStack>
             <DefaultButton
                 bg={'#212529'}
                 color={'#fff'}
-                content={'Learn More'} />
+                children={'Learn More'} />
         </Flex>
     )
 }
