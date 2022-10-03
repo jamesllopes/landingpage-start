@@ -18,7 +18,7 @@ export default function CardPartners() {
             sx={partnerBox}
             className='partnerBox'
         >
-            {partners?.map(item => (
+            {partners.partner?.map(item => (
                 <Image key={item.id} src={item.logo} />
             ))}
         </Box>

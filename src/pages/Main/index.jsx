@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Text } from '@chakra-ui/react'
 import Footer from '../../components/commons/Footer'
 import Header from "../../components/commons/Header"
 import Hero from "../../components/commons/Hero"
@@ -13,10 +14,11 @@ import Team from '../../components/Team';
 import './style.css'
 
 export default function App() {
-  const { setTeam, setSociais, setPartners, setHero, hero } = useStart()
+  const { setTeam, setSociais, setPartners, setHero, hero, team, partners } = useStart()
   const firstHero = { ...hero[0] },
     secondHero = { ...hero[1] },
     thirdHero = { ...hero[2] }
+
 
   const getDataApi = async () => {
     let response = await fetch('./db.json'),
@@ -39,20 +41,21 @@ export default function App() {
         <ContentHero
           welcome={"Welcome"}
           color={"#fff"}>
-          {firstHero.title}
-          {firstHero.text}
+          {firstHero?.title}
+          {firstHero?.text}
           <DefaultButton
             color={"#000"}>Explore</DefaultButton>
         </ContentHero>
         <ImageHero>
-          {firstHero.image}
+          {firstHero?.image}
         </ImageHero>
       </Hero>
       <FlexContainer>
-        <ContentFlexContainer
-          textTitle={'PARTNERS'}
-          heading={'Lorem Ipsum Dolor'}
-          textInfo={'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'} />
+        <ContentFlexContainer>
+          PARTNERS
+          {partners?.title}
+          {partners?.text}
+        </ContentFlexContainer>
         <CardPartners />
         <DefaultButton
           bg={'#212529'}
@@ -61,11 +64,11 @@ export default function App() {
       </FlexContainer>
       <Hero>
         <ImageHero>
-          {secondHero.image}
+          {secondHero?.image}
         </ImageHero>
         <ContentHero>
-          {secondHero.title}
-          {secondHero.text}
+          {secondHero?.title}
+          {secondHero?.text}
           <DefaultButton
             backgroundColor={'#212529'}
             color={'#fff'}>Learn More</DefaultButton>
@@ -73,21 +76,22 @@ export default function App() {
       </Hero>
       <Hero>
         <ContentHero>
-          {thirdHero.title}
-          {thirdHero.text}
+          {thirdHero?.title}
+          {thirdHero?.text}
           <DefaultButton
             backgroundColor={'#212529'}
             color={'#fff'}>Learn More</DefaultButton>
         </ContentHero>
         <ImageHero>
-          {thirdHero.image}
+          {thirdHero?.image}
         </ImageHero>
       </Hero>
       <FlexContainer>
-        <ContentFlexContainer
-          textTitle={'TEAMS'}
-          heading={'Lorem Ipsum Dolor'}
-          textInfo={'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'} />
+        <ContentFlexContainer>
+          TEAMS
+          {team?.title}
+          {team?.text}
+        </ContentFlexContainer>
         <Team />
         <DefaultButton
           bg={'#212529'}

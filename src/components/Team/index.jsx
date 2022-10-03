@@ -19,7 +19,7 @@ export default function Team() {
     <Box
       sx={teamBox}
       className='teamBox'>
-      {team?.map(item => (
+      {team.cards?.map(item => (
         <CardTeams
           key={item.id}
           name={item.name}

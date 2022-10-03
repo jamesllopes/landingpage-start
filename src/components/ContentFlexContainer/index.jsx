@@ -25,18 +25,18 @@ const teamText = {
     paddingBottom: '1.5rem'
 }
 
-export default function ContentFlexContainer({ textTitle, heading, textInfo }) {
+export default function ContentFlexContainer({ children }) {
     return (
         <>
             <Text
-                className="teamTextTitle" sx={teamTextTitle}>{textTitle}</Text>
+                className="teamTextTitle" sx={teamTextTitle}>{children[0]}</Text>
             <Heading
                 fontSize={['2rem', '2.5rem', '3rem']}
-                sx={teamHeading}>{heading}</Heading>
+                sx={teamHeading}>{children[1]}</Heading>
             <Text
                 width={['90%', '70%', '35%']}
                 fontSize={['1.5rem', '1.6rem', '2rem']}
-                sx={teamText}>{textInfo}</Text>
+                sx={teamText}>{children[2]}</Text>
         </>
     )
 }
