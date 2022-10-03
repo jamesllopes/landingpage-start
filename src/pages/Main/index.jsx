@@ -1,15 +1,16 @@
 import { useEffect } from 'react'
-import { Text } from '@chakra-ui/react'
 import Footer from '../../components/commons/Footer'
 import Header from "../../components/commons/Header"
 import Hero from "../../components/commons/Hero"
-import Partners from '../../components/Partners'
-import Team from "../../components/Team"
+import ContentFlexContainer from "../../components/ContentFlexContainer";
 import ContentHero from "../../components/ContentHero"
 import useStart from "../../hooks/useStart"
-import './style.css'
 import DefaultButton from '../../components/Button';
 import ImageHero from '../../components/ImageHero';
+import FlexContainer from '../../components/commons/FlexContainer'
+import CardPartners from '../../components/Cards/CardPartners'
+import Team from '../../components/Team';
+import './style.css'
 
 export default function App() {
   const { setTeam, setSociais, setPartners, setHero, hero } = useStart()
@@ -18,8 +19,8 @@ export default function App() {
     thirdHero = { ...hero[2] }
 
   const getDataApi = async () => {
-    let response = await fetch('./db.json')
-    let data = await response.json()
+    let response = await fetch('./db.json'),
+      data = await response.json()
     setTeam(data.teams)
     setSociais(data.sociais)
     setPartners(data.partners)
@@ -47,7 +48,17 @@ export default function App() {
           {firstHero.image}
         </ImageHero>
       </Hero>
-      <Partners />
+      <FlexContainer>
+        <ContentFlexContainer
+          textTitle={'PARTNERS'}
+          heading={'Lorem Ipsum Dolor'}
+          textInfo={'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'} />
+        <CardPartners />
+        <DefaultButton
+          bg={'#212529'}
+          color={'#fff'}
+          children={'Learn More'} />
+      </FlexContainer>
       <Hero>
         <ImageHero>
           {secondHero.image}
@@ -72,7 +83,17 @@ export default function App() {
           {thirdHero.image}
         </ImageHero>
       </Hero>
-      <Team />
+      <FlexContainer>
+        <ContentFlexContainer
+          textTitle={'TEAMS'}
+          heading={'Lorem Ipsum Dolor'}
+          textInfo={'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'} />
+        <Team />
+        <DefaultButton
+          bg={'#212529'}
+          color={'#fff'}
+          children={'View Team'} />
+      </FlexContainer>
       <Footer />
     </div>
   )

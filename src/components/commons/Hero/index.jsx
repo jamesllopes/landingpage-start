@@ -1,19 +1,21 @@
 import {
     Flex
 } from "@chakra-ui/react";
+import "./style.css"
 
-const welcomeFlex = {
-    width: '100%',
-    height: '50%',
-    padding: '4% 10% 2% 10%',
-    alignItems: 'center',
-    justifyContent: 'space-between'
+const heroFlex = {
+    maxWidth: '100%',
+    padding: '3% 10%',
+    marginBottom: '2rem'
 }
 
 export default function Hero({ children, ...props }) {
     return (
         <Flex
-            sx={welcomeFlex}
+            className="heroFlex"
+            align={'center'}
+            justify={'space-between'}
+            sx={heroFlex}
             {...props}>
             {children}
         </Flex>

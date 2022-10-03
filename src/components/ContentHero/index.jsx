@@ -6,7 +6,7 @@ import {
 
 const contentFlex = {
     flexDirection: 'column',
-    gap: '0.7rem'
+    gap: '1rem',
 }
 
 const styleHeading = {
@@ -17,42 +17,40 @@ const styleHeading = {
     letterSpacing: '0.3rem'
 }
 
-const textContentFlex = {
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    width: '416px',
-    gap: '1rem',
-}
-
 const styleHeadingContent = {
-    fontSize: '2.5rem',
     fontFamily: "'Crimson Text', serif",
     fontWeight: '700'
 }
 
 const styleText = {
-    fontSize: '1rem',
     fontFamily: "'Work Sans', sans-serif",
     fontWeight: '400',
 }
 
 
 export default function ContentHero({ children, welcome, ...props }) {
-    console.log(welcome)
     return (
-        <Flex sx={contentFlex}
+        <Flex
+            className="contentFlex"
+            sx={contentFlex}
             {...props}>
-            {welcome && <Heading sx={styleHeading}>Welcome</Heading>}
-            <Flex
-                sx={textContentFlex}>
-                <Heading
-                    sx={styleHeadingContent}>{children[0]}
-                </Heading>
-                <Text sx={styleText}>
-                    {children[1]}
-                </Text>
-                {children[2]}
-            </Flex>
+            {welcome && <Heading
+                sx={styleHeading}>Welcome</Heading>}
+
+            <Heading
+                width={[316, 416, 516]}
+                fontSize={['2rem', '2.5rem', '3rem']}
+                sx={styleHeadingContent}>{children[0]}
+            </Heading>
+            <Text
+                width={[346, 416, 616]}
+                fontSize={'1.2rem'}
+                className="styleText"
+                sx={styleText}>
+                {children[1]}
+            </Text>
+            {children[2]}
+
         </Flex >
     )
 }

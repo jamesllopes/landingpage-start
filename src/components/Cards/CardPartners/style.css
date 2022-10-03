@@ -1,0 +1,6 @@
+@media screen and (max-width: 980px) {
+    .partnerBox {
+        flex-direction: column;
+        gap: 2em;
+    }
+}

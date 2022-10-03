@@ -1,0 +1,19 @@
+@media screen and (max-width: 980px) {
+    .footer {
+        height: 160px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .styleText {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .styleText {
+        font-size: 0.8rem;
+    }
+}
+

@@ -2,10 +2,11 @@ import {
     Box,
     Image
 } from "@chakra-ui/react";
+import "./style.css"
 
-export default function ImageHero({ children, ...props }) {
+export default function ImageHero({ children }) {
     return (
-        <Box>
+        <Box className="imageBox">
             <Image src={children} width='90%' />
         </Box>
     )

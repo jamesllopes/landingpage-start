@@ -1,5 +1,4 @@
 import {
-    HStack,
     Box,
     Text,
     Image,
@@ -39,7 +38,7 @@ const cardText = {
     color: '#212529BF'
 }
 
-export default function Card({ name, role, avatar }) {
+export default function CardTeams({ name, role, avatar }) {
     return (
 
         <Box sx={cardBox}>

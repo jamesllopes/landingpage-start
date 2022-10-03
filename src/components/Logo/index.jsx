@@ -13,7 +13,7 @@ const headerHeading = {
 export default function Logo() {
     return (
         <Box display="flex" align="center" gap="1rem">
-            <Image src="./logo.svg" w="70px" h="48.31px" />
+            <Image src="./logo.svg" maxW={["40px", "60px"]} h="48.31px" />
             <Heading sx={headerHeading}>
                 Start
             </Heading>

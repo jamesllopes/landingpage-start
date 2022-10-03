@@ -8,14 +8,17 @@ const headerFlex = {
   justifyContent: 'space-between',
   padding: '0.5rem',
   height: '90px',
-  padding: '2% 10% 2% 10%',
+  padding: '4% 10% 2% 10%',
   fontFamily: "'Work Sans', sans-serif",
 }
 
 export default function Header() {
 
   return (
-    <Flex sx={headerFlex}>
+    <Flex
+      backgroundColor={'red'}
+      className='header'
+      sx={headerFlex}>
       <Logo />
       <Navbar />
     </Flex>
