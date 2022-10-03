@@ -7,19 +7,12 @@ const styleButton = {
     fontWeight: '400'
 }
 
-export function DefaultButton({ children, ...props }) {
+export default function DefaultButton({ children, ...props }) {
     return (
         <Button
             sx={styleButton}
             {...props}>
             {children}
         </Button>
-    )
-}
-export const ButtonDefault = DefaultButton
-export function ButtonPrimary({ ...props }) {
-    return (
-        <DefaultButton
-            {...props} />
     )
 }

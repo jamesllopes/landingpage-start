@@ -1,7 +1,7 @@
 import { Flex, HStack } from "@chakra-ui/react";
 import Card from "../Card";
 import useStart from "../../hooks/useStart"
-import { ButtonDefault } from "../Button";
+import DefaultButton from "../Button";
 import TitleSection from "../TitleSection";
 
 const teamFlex = {
@@ -29,7 +29,7 @@ export default function Team() {
             avatar={item.avatar} />
         ))}
       </HStack>
-      <ButtonDefault
+      <DefaultButton
         bg={'#212529'}
         color={'#fff'}
         children={'View Team'} />

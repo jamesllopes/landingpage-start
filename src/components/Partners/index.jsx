@@ -1,5 +1,5 @@
 import { Flex, HStack, Image } from "@chakra-ui/react";
-import { DefaultButton } from "../Button";
+import DefaultButton from "../Button";
 import TitleSection from "../TitleSection";
 import useStart from "../../hooks/useStart";
 
