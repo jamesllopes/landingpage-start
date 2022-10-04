@@ -1,10 +1,9 @@
 import { useEffect } from 'react'
-import { Text } from '@chakra-ui/react'
 import Footer from '../../components/commons/Footer'
 import Header from "../../components/commons/Header"
 import Hero from "../../components/commons/Hero"
-import ContentFlexContainer from "../../components/ContentFlexContainer";
-import ContentHero from "../../components/ContentHero"
+import { ContentFlexContainer } from "../../components/ContentFlexContainer";
+import { ContentHero } from "../../components/ContentHero"
 import useStart from "../../hooks/useStart"
 import DefaultButton from '../../components/Button';
 import ImageHero from '../../components/ImageHero';
@@ -36,13 +35,18 @@ export default function App() {
   return (
     <div className="main">
       <Header />
+
       <Hero
         backgroundColor={'#74C69D'}>
         <ContentHero
           welcome={"Welcome"}
           color={"#fff"}>
-          {firstHero?.title}
-          {firstHero?.text}
+          <ContentHero.Title>
+            {firstHero?.title}
+          </ContentHero.Title>
+          <ContentHero.Text>
+            {firstHero?.text}
+          </ContentHero.Text>
           <DefaultButton
             color={"#000"}>Explore</DefaultButton>
         </ContentHero>
@@ -50,11 +54,18 @@ export default function App() {
           {firstHero?.image}
         </ImageHero>
       </Hero>
+
       <FlexContainer>
         <ContentFlexContainer>
-          PARTNERS
-          {partners?.title}
-          {partners?.text}
+          <ContentFlexContainer.Info>
+            PARTNERS
+          </ContentFlexContainer.Info>
+          <ContentFlexContainer.Title>
+            {partners?.title}
+          </ContentFlexContainer.Title>
+          <ContentFlexContainer.Text>
+            {partners?.text}
+          </ContentFlexContainer.Text>
         </ContentFlexContainer>
         <CardPartners />
         <DefaultButton
@@ -62,22 +73,32 @@ export default function App() {
           color={'#fff'}
           children={'Learn More'} />
       </FlexContainer>
+
       <Hero>
         <ImageHero>
           {secondHero?.image}
         </ImageHero>
         <ContentHero>
-          {secondHero?.title}
-          {secondHero?.text}
+          <ContentHero.Title>
+            {secondHero?.title}
+          </ContentHero.Title>
+          <ContentHero.Text>
+            {secondHero?.text}
+          </ContentHero.Text>
           <DefaultButton
             backgroundColor={'#212529'}
             color={'#fff'}>Learn More</DefaultButton>
         </ContentHero>
       </Hero>
+
       <Hero>
         <ContentHero>
-          {thirdHero?.title}
-          {thirdHero?.text}
+          <ContentHero.Title>
+            {thirdHero?.title}
+          </ContentHero.Title>
+          <ContentHero.Text>
+            {thirdHero?.text}
+          </ContentHero.Text>
           <DefaultButton
             backgroundColor={'#212529'}
             color={'#fff'}>Learn More</DefaultButton>
@@ -88,9 +109,15 @@ export default function App() {
       </Hero>
       <FlexContainer>
         <ContentFlexContainer>
-          TEAMS
-          {team?.title}
-          {team?.text}
+          <ContentFlexContainer.Info>
+            TEAMS
+          </ContentFlexContainer.Info>
+          <ContentFlexContainer.Title>
+            {team?.title}
+          </ContentFlexContainer.Title>
+          <ContentFlexContainer.Text>
+            {team?.text}
+          </ContentFlexContainer.Text>
         </ContentFlexContainer>
         <Team />
         <DefaultButton

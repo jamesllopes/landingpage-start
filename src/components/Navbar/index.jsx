@@ -4,6 +4,7 @@ import {
     BreadcrumbLink
 } from "@chakra-ui/react";
 import { HamburgerIcon } from '@chakra-ui/icons'
+import NavBarModal from "../Modal/NavBarModal";
 
 
 const headerNav = {
@@ -16,6 +17,7 @@ export default function Navbar() {
     const menuItems = [{ page: "Home", link: '#' }, { page: "Portfolio", link: '#' }, { page: "Services", link: '#' }, { page: "Contact", link: '#' }]
     return (
         <>
+            <NavBarModal />
             <HamburgerIcon
                 w={10}
                 h={10}
