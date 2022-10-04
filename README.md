@@ -26,5 +26,5 @@ LandingPage desenvolvida utilizando o Chakra UI.
 
 <h4 align="left">
 Funcionalidade :white_check_mark: <br>
-Responsividade	❗
+Responsividade	:white_check_mark:
 </h4>
