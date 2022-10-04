@@ -1,9 +1,5 @@
 import React from "react";
-import {
-    Flex,
-    Heading,
-    Text
-} from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import classNames from 'classnames'
 
 const contentFlex = {

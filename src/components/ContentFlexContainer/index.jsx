@@ -1,35 +1,36 @@
-import { Text, Heading, Box, Flex } from "@chakra-ui/react";
-import classNames from 'classnames'
+import React from "react";
+import { Text, Heading, Flex } from "@chakra-ui/react";
+import classNames from "classnames"
 
 
 const teamTextTitle = {
-    textAlign: 'center',
-    color: '#74C69D',
-    fontSize: '1rem',
+    textAlign: "center",
+    color: "#74C69D",
+    fontSize: "1rem",
     fontFamily: "'Work Sans', sans-serif",
-    fontWeight: '700',
-    letterSpacing: '5px',
-    paddingTop: '2rem'
+    fontWeight: "700",
+    letterSpacing: "5px",
+    paddingTop: "2rem"
 }
 
 const teamHeading = {
-    textAlign: 'center',
-    color: '#212529',
+    textAlign: "center",
+    color: "#212529",
     fontFamily: "'Crimson Text', serif",
-    fontWeight: '700',
+    fontWeight: "700",
 }
 
 const teamText = {
-    textAlign: 'center',
+    textAlign: "center",
     fontFamily: "'Work Sans', sans-serif",
-    fontWeight: '400',
-    paddingBottom: '1.5rem'
+    fontWeight: "400",
+    paddingBottom: "1.5rem"
 }
 
 export function ContentFlexContainer({ children, classes }) {
     return (
         <Flex
-            className={classNames('ContentFlexContainer', classes)}
+            className={classNames("ContentFlexContainer", classes)}
             direction={'column'}
             align='center'
             w={'100%'}

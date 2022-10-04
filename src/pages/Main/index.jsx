@@ -48,7 +48,9 @@ export default function App() {
             {firstHero?.text}
           </ContentHero.Text>
           <DefaultButton
-            color={"#000"}>Explore</DefaultButton>
+            color={"#000"}>
+            Explore
+          </DefaultButton>
         </ContentHero>
         <ImageHero>
           {firstHero?.image}
@@ -70,8 +72,9 @@ export default function App() {
         <CardPartners />
         <DefaultButton
           bg={'#212529'}
-          color={'#fff'}
-          children={'Learn More'} />
+          color={'#fff'}>
+          Learn More
+        </DefaultButton>
       </FlexContainer>
 
       <Hero>
@@ -86,8 +89,10 @@ export default function App() {
             {secondHero?.text}
           </ContentHero.Text>
           <DefaultButton
-            backgroundColor={'#212529'}
-            color={'#fff'}>Learn More</DefaultButton>
+            bg={'#212529'}
+            color={'#fff'}>
+            Learn More
+          </DefaultButton>
         </ContentHero>
       </Hero>
 
@@ -100,8 +105,10 @@ export default function App() {
             {thirdHero?.text}
           </ContentHero.Text>
           <DefaultButton
-            backgroundColor={'#212529'}
-            color={'#fff'}>Learn More</DefaultButton>
+            bg={'#212529'}
+            color={'#fff'}>
+            Learn More
+          </DefaultButton>
         </ContentHero>
         <ImageHero>
           {thirdHero?.image}
@@ -122,8 +129,9 @@ export default function App() {
         <Team />
         <DefaultButton
           bg={'#212529'}
-          color={'#fff'}
-          children={'View Team'} />
+          color={'#fff'}>
+          View Team
+        </DefaultButton>
       </FlexContainer>
       <Footer />
     </div>

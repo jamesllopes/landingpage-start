@@ -2,22 +2,14 @@ import { Box } from "@chakra-ui/react";
 import CardTeams from "../Cards/CardTeams";
 import useStart from "../../hooks/useStart"
 import './style.css'
-
-
-const teamBox = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: '6rem',
-  paddingBottom: '2rem'
-}
+import { cardsBox } from "../Cards/Styles/Card";
 
 export default function Team() {
   const { team } = useStart()
   return (
     <Box
-      sx={teamBox}
+      variant='card'
+      sx={cardsBox}
       className='teamBox'>
       {team.cards?.map(item => (
         <CardTeams
